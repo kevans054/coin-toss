@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 125px 175px 100px 150px 5px;
+      grid-template-rows: 125px 175px 100px 150px 5px;
+      grid-template-areas: 'header header' 'heads tails' 'result result' 'tally tally' 'scorebox scorebox';
+  grid-gap: 1rem;
+  min-height: 100vh;
+  background-color: #6255a8;
+}
+
+.grid-wrapper .header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ec81ff;
+  color: #470453;
+}
+
+.grid-wrapper .header #animated-gif-container {
+  background-image: url(../images/VainDarkIbizanhound-size_restricted.gif);
+  background-repeat: repeat;
+  width: 100%;
+  height: 48px;
+  padding-left: 20px;
+}
+
+.grid-wrapper .play {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  color: #372e69;
+}
+
+.grid-wrapper .play .heads {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  left: -200px;
+  top: 50px;
+  text-align: center;
+}
+
+.grid-wrapper .play .tails {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  left: 150px;
+  top: 50px;
+  text-align: center;
+}
+
+.grid-wrapper .result {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 2em;
+  background-color: #2d6ee6;
+}
+
+.grid-wrapper .tally {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  text-align: center;
+  bottom: 20px;
+  font-size: 2em;
+  background-color: #2d6ee6;
+  bottom: 25px;
+}
+
+.grid-wrapper .scorebox {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ec81ff;
+}
+
+.grid-wrapper .scorebox .reset {
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+.grid-wrapper .button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4bcadb;
+  color: #08454d;
+}
+
+.grid-wrapper h2 {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
